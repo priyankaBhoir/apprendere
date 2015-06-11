@@ -1,8 +1,9 @@
 (function() {
     'use strict';
-    console.log("render");
+    var url = 'notes.json';
+    console.log('render');
     React.render(
-      <Board />,
+      <Board url={url}/>,
       document.getElementById('content')
       );
 })();
