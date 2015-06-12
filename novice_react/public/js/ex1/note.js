@@ -10,6 +10,7 @@ class Note extends React.Component {
           {this.props.title}
         </h2>
         {this.props.children}
+        <input type="button"  onClick={this.deleteNote.bind(this)}/>
       </div>
     );
   }
